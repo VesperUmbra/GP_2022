@@ -1,0 +1,1 @@
+print("2022 autumn GP by czw")
