@@ -72,8 +72,8 @@ while 1:
 	q.pos(a[0], a[1], a[2])
 
 	print("Distance between p and q: {0:.2f}".format(p.cul_dist(q)))
-	print("Distance between p and originator: {0:.2f}".format(p.cul_dist_to_origin()))
-	print("Distance between q and originator: {0:.2f}".format(q.cul_dist_to_origin()))
+	print("Distance between p and origin: {0:.2f}".format(p.cul_dist_to_origin()))
+	print("Distance between q and origin: {0:.2f}".format(q.cul_dist_to_origin()))
 
 	flag = input("Do you want to try again? (Y/N) ").upper()
 	while flag not in "YN":
@@ -82,3 +82,4 @@ while 1:
 		break
 	p.reset()
 	q.reset()
+print("Exit successfully.")
