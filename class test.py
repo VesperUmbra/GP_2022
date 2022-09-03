@@ -31,7 +31,7 @@ def error():
 	return
 
 
-def str_input_and_check(hint, fa1g, max_num):
+def str_input_and_check(hint: str, fa1g: str, max_num: int):
 	s7r = input(hint)
 	axis = list()
 	temp = 0
