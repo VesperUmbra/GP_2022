@@ -1,6 +1,5 @@
-
 """测试各个软件包"""
-
+'''
 import virtualenv
 import tqdm
 import json
@@ -21,15 +20,19 @@ import selenium
 import jieba
 import gensim
 import networkx
-import PIL
+from PIL import Image
 
 import librosa
 import statsmodels
 import pickle
-
+from bs4 import BeautifulSoup
 import pymongo
 import pymysql
+'''
+import binarytree
 
+tree = binarytree.BinaryPtr()
+binarytree.test()
 
 print("2022 autumn GP by czw")
 a = int(input())
