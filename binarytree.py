@@ -23,7 +23,7 @@ class BinaryPtr:
 		展示一个二叉树节点存储的元素（不是内存地址）
 		:return:
 		'''
-		print(self.data)
+		print(self.data, end=' ')
 
 	def pluginleafbybst(self, item):
 		'''
@@ -46,9 +46,9 @@ class BinaryPtr:
 		'''
 		if self.data != None:
 			if self.data == itemtosearch:
-				print("Find item:", end='')
+				print("Find item:", end=' ')
 				self.showaleafdata()
-				print(self)
+				print('in position: ',self)
 				return
 			elif itemtosearch < self.data:
 				self.left.searchinbst(itemtosearch)
@@ -88,6 +88,12 @@ class BinaryPtr:
 			self.right.postorder()
 			self.showaleafdata()
 
+	def destroybt(self):
+		if self.data != None:
+			self.left.destroybt()
+			self.right.destroybt()
+			self.__init__()
+
 
 def test():
 	testlist = [10, 5, 2, 12, 20, 19, 17, 5]
@@ -97,18 +103,27 @@ def test():
 	testtree = BinaryPtr()
 	for item in testlist:
 		testtree.pluginleafbybst(item)
+	testtree.preorder()
+	print('')
 	testtree.inorder()
+	print('')
+	testtree.postorder()
 	print('')
 	testtree.searchinbst(6)
 	testtree.searchinbst(5)
-
+	testtree.destroybt()
 	examtree = BinaryPtr()
 	for item in examlist:
 		examtree.pluginleafbybst(item)
+	examtree.preorder()
+	print('')
 	examtree.inorder()
+	print('')
+	examtree.postorder()
 	print('')
 	examtree.searchinbst(12)
 	examtree.searchinbst(5)
+	examtree.destroybt()
 
 if __name__ == '__main__':
 	test()

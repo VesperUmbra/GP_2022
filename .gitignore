@@ -9,6 +9,7 @@ bin-release/
 
 # Executables
 *.swf
+*.xls;xlsx;csv
 *.air
 *.ipa
 *.apk
@@ -27,3 +28,5 @@ bin-release/
 slides/
 .idea/
 Homework Document/
+/Week 2/danmuku.csv
+/Week 2/stopwords_list.txt
