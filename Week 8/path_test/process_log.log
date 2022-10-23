@@ -1,0 +1,38 @@
+Source path:... D:\buaa_czw\2022 Autumn\General Programming 2022\Week 8\Project Week8.py
+10:05:27.404681 call       137 def processing_main():
+10:05:27.405678 line       138 	p = Processing()
+New var:....... p = <__main__.Processing object at 0x000001F3DA2A3FA0>
+10:05:27.405678 line       139 	p.simulator_makehugelist()
+    Source path:... D:\Python\lib\site-packages\memory_profiler.py
+    Starting var:.. args = (<__main__.Processing object at 0x000001F3DA2A3FA0>,)
+    Starting var:.. kwargs = {}
+    Starting var:.. func = <function Processing.simulator_makehugelist at 0x000001F3DA2B9A20>
+    Starting var:.. get_prof = functools.partial(<class 'memory_profiler.LineProfiler'>, backend='psutil')
+    Starting var:.. show_results_bound = functools.partial(<function show_results at 0x000001F3CB716710>, stream=None, precision=1)
+    10:05:27.406675 call      1184             def wrapper(*args, **kwargs):
+    10:05:27.440381 line      1185                 prof = get_prof()
+    New var:....... prof = <memory_profiler.LineProfiler object at 0x000001F3DA2C4040>
+    10:05:27.440381 line      1186                 val = prof(func)(*args, **kwargs)
+    New var:....... val = None
+    10:05:42.294045 line      1187                 show_results_bound(prof)
+    10:05:42.295042 line      1188                 return val
+    10:05:42.296040 return    1188                 return val
+    Return value:.. None
+    Elapsed time: 00:00:14.889365
+10:05:42.297037 line       141 	lp = LineProfiler()
+New var:....... lp = <line_profiler.line_profiler.LineProfiler object at 0x000001F3DA330520>
+10:05:42.297037 line       142 	lp_wrapper = lp(p.simulator_travelhugelist)
+New var:....... lp_wrapper = <function Processing.simulator_travelhugelist at 0x000001F3DA308310>
+10:05:42.298034 line       143 	lp_wrapper()
+    Source path:... D:\buaa_czw\2022 Autumn\General Programming 2022\Week 8\Project Week8.py
+    Starting var:.. self = <__main__.Processing object at 0x000001F3DA2A3FA0>
+    Starting var:.. path = 'D:\\buaa_czw\\2022 Autumn\\General Programming 2022\\Week 8\\path_test\\process_test.txt'
+    10:05:42.920434 call       128 	def simulator_savehugelist(
+    10:05:42.922429 line       132 		with open(path, 'wb') as file:
+    New var:....... file = <_io.BufferedWriter name='D:\\buaa_czw\\2022 Aut...mming 2022\\Week 8\\path_test\\process_test.txt'>
+    10:05:42.923426 line       133 			pickle.dump(self._list, file, 0)
+    10:05:43.091976 line       132 		with open(path, 'wb') as file:
+    10:05:43.091976 return     132 		with open(path, 'wb') as file:
+    Return value:.. None
+    Elapsed time: 00:00:00.172539
+    Elapsed time: 00:00:15.689290
